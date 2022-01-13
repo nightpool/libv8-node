@@ -11,7 +11,7 @@ version="${1:-$("${libexec}/metadata" node_version)}"
 cd "${src}/node-v${version}"
 
 BASEDIR="${PWD}"
-BUILDTYPE="${BUILDTYPE:-Release}"
+BUILDTYPE="${BUILDTYPE:-Debug}"
 LIBV8_MONOLITH="libv8_monolith.a"
 
 cd "out/${BUILDTYPE}/obj.target"
